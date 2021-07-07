@@ -1,0 +1,56 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+    visibility: hidden; /*마우스에 걸리지 않게 빠져버리는 것  html을 완전히 제거하는 것은 아님 
+    완전히 제거를 하려면 자바스크립트를 이용 */
+  }
+}
+
+#splash-screen {
+  background-image: url("https://i.pinimg.com/originals/a4/8f/8e/a48f8e3fb4acd33c8e6395332c64cb15.png");
+  position: fixed;
+  /*position: absolute; /*여기서는 바디가 relative*/
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards; /*forward는 마지막 keyframes를 기억함*/
+  animation-delay: 2s; /*애니메이션을 몇초간 지연시킬 수 있다*/
+}

@@ -1,0 +1,25 @@
+.point2 {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  right: -72px;
+  top: -24px;
+}
+
+.point3 {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  left: 120px;
+  top: -24px;
+}
