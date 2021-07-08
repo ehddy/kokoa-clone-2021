@@ -1,8 +1,9 @@
 #chat-screen {
   background-image: url("https://image.musinsa.com/mfile_s01/2019/04/08/baba989d4c8b615cab343b5b639ce88e182333.jpg");
-  background-color: #abc1d1; /*배경화면 고정하는 법 배우기 */
   background-attachment: fixed;
-  height: 500vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #chat-screen .alt-header,
@@ -54,6 +55,7 @@
   border-radius: 25px;
   margin-bottom: 25px;
 }
+
 @keyframes message-row {
   from {
     opacity: 0;

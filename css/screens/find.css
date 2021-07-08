@@ -117,3 +117,7 @@
   일종의 브라우저를 돕는 행위, 이것이 변하는 게 확실하다고 말해주는 행위*/
   animation: heartBeat 1s linear infinite;
 }
+
+.open-post__title {
+  margin-bottom: 7px;
+}

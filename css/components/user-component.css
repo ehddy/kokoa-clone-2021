@@ -57,3 +57,8 @@
   color: tomato;
   margin-left: 9px;
 }
+
+.friends-screen__channel-header > span {
+  font-weight: 600;
+  color: black;
+}
